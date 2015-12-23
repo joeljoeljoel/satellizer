@@ -181,7 +181,7 @@ $authProvider.facebook({
   scope: ['email'],
   scopeDelimiter: ',',
   display: 'popup',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 580, height: 400 }
 });
 
@@ -196,7 +196,7 @@ $authProvider.google({
   scopePrefix: 'openid',
   scopeDelimiter: ' ',
   display: 'popup',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 452, height: 633 }
 });
 
@@ -208,7 +208,7 @@ $authProvider.github({
   optionalUrlParams: ['scope'],
   scope: ['user:email'],
   scopeDelimiter: ' ',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 1020, height: 618 }
 });
 
@@ -221,7 +221,7 @@ $authProvider.instagram({
   requiredUrlParams: ['scope'],
   scope: ['basic'],
   scopeDelimiter: '+',
-  type: '2.0'
+  oAuthVersion: '2.0'
 });
 
 // LinkedIn
@@ -233,7 +233,7 @@ $authProvider.linkedin({
   scope: ['r_emailaddress'],
   scopeDelimiter: ' ',
   state: 'STATE',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 527, height: 582 }
 });
 
@@ -242,7 +242,7 @@ $authProvider.twitter({
   url: '/auth/twitter',
   authorizationEndpoint: 'https://api.twitter.com/oauth/authenticate',
   redirectUri: window.location.origin,
-  type: '1.0',
+  oAuthVersion: '1.0',
   popupOptions: { width: 495, height: 645 }
 });
 
@@ -255,7 +255,7 @@ $authProvider.twitch({
   scope: ['user_read'],
   scopeDelimiter: ' ',
   display: 'popup',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 500, height: 560 }
 });
 
@@ -268,7 +268,7 @@ $authProvider.live({
   scope: ['wl.emails'],
   scopeDelimiter: ' ',
   display: 'popup',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 500, height: 560 }
 });
 
@@ -279,7 +279,7 @@ $authProvider.yahoo({
   redirectUri: window.location.origin,
   scope: [],
   scopeDelimiter: ',',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 559, height: 519 }
 });
 
@@ -291,7 +291,7 @@ $authProvider.bitbucket({
   optionalUrlParams: ['scope'],
   scope: ['email'],
   scopeDelimiter: ' ',
-  type: '2.0',
+  oAuthVersion: '2.0',
   popupOptions: { width: 1020, height: 618 }
 });
 
@@ -309,7 +309,7 @@ $authProvider.oauth2({
   scopePrefix: null,
   scopeDelimiter: null,
   state: null,
-  type: null,
+  oAuthVersion: null,
   popupOptions: null,
   responseType: 'code',
   responseParams: {
@@ -325,7 +325,7 @@ $authProvider.oauth1({
   url: null,
   authorizationEndpoint: null
   redirectUri: null,
-  type: null,
+  oAuthVersion: null,
   popupOptions: null
 });
 ```
